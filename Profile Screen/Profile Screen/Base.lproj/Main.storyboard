@@ -86,7 +86,7 @@
                                 <color key="textColor" red="0.10661392510000001" green="0.089351141810000007" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrO-zP-qhg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donia Elshenawy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrO-zP-qhg">
                                 <rect key="frame" x="192" y="378" width="202" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="202" id="hzu-3s-Es8"/>
@@ -95,7 +95,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW3-ex-SIn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW3-ex-SIn">
                                 <rect key="frame" x="192" y="506" width="202" height="26.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="202" id="plt-7f-HQS"/>
@@ -104,12 +104,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3f-Kr-xPp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engineering" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3f-Kr-xPp">
                                 <rect key="frame" x="192" y="637" width="197" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="6ua-EV-SLU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -138,10 +138,14 @@
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="YsL-bf-H2d">
                             <connections>
                                 <action selector="editBtn:" destination="iLs-VZ-Leg" id="dnN-wC-CCf"/>
-                                <segue destination="2qT-Sl-OFf" kind="push" id="7ng-d2-Pee"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageLabel" destination="rW3-ex-SIn" id="hv6-Nx-rY1"/>
+                        <outlet property="facultyLabel" destination="p3f-Kr-xPp" id="FQp-7c-hzh"/>
+                        <outlet property="nameLabel" destination="SrO-zP-qhg" id="yaS-k7-W6y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkV-U1-rOF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,7 +154,7 @@
         <!--profile-->
         <scene sceneID="rTg-jN-LiC">
             <objects>
-                <viewController id="2qT-Sl-OFf" customClass="ThirdScreenViewController" customModule="Profile_Screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TVC" id="2qT-Sl-OFf" customClass="ThirdScreenViewController" customModule="Profile_Screen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1CZ-QQ-3QM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,8 +220,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="profile" id="U7q-FN-OrK">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="jQT-fP-4Ki"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="jQT-fP-4Ki">
+                            <connections>
+                                <action selector="saveBtn:" destination="2qT-Sl-OFf" id="fKR-a7-sdw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageTextField" destination="Wb6-np-ZOi" id="sfY-UV-fma"/>
+                        <outlet property="facultyTextField" destination="hwn-L2-s63" id="o0T-a6-DXf"/>
+                        <outlet property="nameTextField" destination="Q2w-qX-OCQ" id="c2T-CZ-rCg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKK-tQ-F1t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,6 +242,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sn4-ds-Zp5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gXE-mq-c7i">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -298,9 +312,6 @@
             <point key="canvasLocation" x="7915.9420289855079" y="57.589285714285708"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="7ng-d2-Pee"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>

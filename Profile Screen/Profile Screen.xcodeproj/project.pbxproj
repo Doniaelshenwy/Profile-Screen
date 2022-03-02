@@ -19,6 +19,7 @@
 		FC1EE31327CD655B0071EFD6 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1EE31227CD655B0071EFD6 /* FirstScreenViewController.swift */; };
 		FC1EE31827CD657B0071EFD6 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1EE31727CD657B0071EFD6 /* SecondScreenViewController.swift */; };
 		FC1EE31D27CD658F0071EFD6 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1EE31C27CD658F0071EFD6 /* ThirdScreenViewController.swift */; };
+		FCACD78F27CEE2DD0049D6E5 /* Communicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCACD78E27CEE2DD0049D6E5 /* Communicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FC1EE31227CD655B0071EFD6 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		FC1EE31727CD657B0071EFD6 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 		FC1EE31C27CD658F0071EFD6 /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
+		FCACD78E27CEE2DD0049D6E5 /* Communicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				FC1EE31227CD655B0071EFD6 /* FirstScreenViewController.swift */,
 				FC1EE31727CD657B0071EFD6 /* SecondScreenViewController.swift */,
 				FC1EE31C27CD658F0071EFD6 /* ThirdScreenViewController.swift */,
+				FCACD78E27CEE2DD0049D6E5 /* Communicator.swift */,
 			);
 			path = "Profile Screen";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				FC0A570F27CC2DC400E413B1 /* AppDelegate.swift in Sources */,
 				FC0A571127CC2DC400E413B1 /* SceneDelegate.swift in Sources */,
 				FC0A571927CC2DC400E413B1 /* Profile_Screen.xcdatamodeld in Sources */,
+				FCACD78F27CEE2DD0049D6E5 /* Communicator.swift in Sources */,
 				FC1EE31327CD655B0071EFD6 /* FirstScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
